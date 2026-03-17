@@ -19,7 +19,7 @@ O foco deste notebook é comparar duas tecnologias distintas:
 * **Performance:** Extremamente precisa, detecta rostos de perfil e em condições difíceis.
 * **Limitação:** Muito pesada computacionalmente. Sem uma GPU dedicada (CUDA), o processamento torna-se inviável para tempo real (chegando a 40s+ em imagens de alta resolução com upsampling).
 
-### 📊 Resultados do Experimento (Resumo)
+###  Resultados do Experimento (Resumo)
 Em testes com múltiplos rostos pequenos (multidão), observou-se:
 
 | Método | Upsampling | Tempo (CPU) | Detecções | Conclusão |
@@ -42,15 +42,15 @@ O código foi configurado para rodar no Google Colab lendo imagens do **Google D
 * Se for rodar localmente, altere os caminhos das imagens (`cv2.imread`) e do modelo `.dat`.
 * Lembre-se: O Dlib trabalha com imagens em **RGB**, enquanto o OpenCV carrega em **BGR**. A conversão é obrigatória para bons resultados na CNN.
 
-## 🛠️ Tecnologias
+##  Tecnologias
 * Python
 * Dlib
 * OpenCV (`cv2`)
 * Google Colab
 
-## 📂 Estrutura da Série
+##  Estrutura da Série
 1.  [cv-study-01-haarcascade](https://github.com/LeonardVG/cv-study-01-haarcascade) - Detecção básica e rápida.
 2.  **cv-study-02-dlib-face-detection** - Comparativo HOG vs CNN (Este repositório).
 
 ---
-Desenvolvido para fins de estudo e benchmarking.
+Desenvolvido para fins de estudo.
